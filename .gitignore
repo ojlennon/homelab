@@ -1,0 +1,13 @@
+# 1) Ignore all files
+*
+
+# 2) But don’t ignore directories — so Git can recurse into them
+!*/
+
+# 3) Whitelist this gitignore itself
+!.gitignore
+
+# 4) Whitelist all docker-compose YAML files (including override, prod, etc.)
+!**/docker-compose*.yml
+!**/docker-compose*.yaml
+
